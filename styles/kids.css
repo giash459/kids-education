@@ -1,0 +1,85 @@
+/* shared style */
+
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 12px;
+}
+.color-facilities{
+    color: rgb(5, 212, 223);
+}
+.color-Admission{
+    color: rgb(93, 88, 239);
+}
+.color-blue{
+    color: rgb(1, 172, 253);
+}
+.color-yellow{
+    color: rgb(254, 163, 1);
+}
+.bg-yellow{
+    background-color: rgb(254, 163, 1);
+}
+.bg-black{
+    background-color: rgb(17, 17, 17);
+}
+.text-white{
+    color: white;
+}
+
+/* navbar related style */
+.navbar{
+    max-width: 1440px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border: 2px solid red;
+}
+.first-content{
+    gap: 20px;
+    align-items: center;
+}
+.nav-title{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(17, 17, 17);
+}
+.nav-links{
+    gap: 20px;
+}
+.nav-item{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* banner related style */
+.banner{
+    max-width: 1440px;
+    margin: 10px auto;
+    justify-content: space-between;
+    border: 2px solid red;
+}
+.banner-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 3.5rem;
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgb(17, 17, 17);
+}
