@@ -40,6 +40,15 @@
     color: white;
 }
 
+.title{
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* navbar related style */
 .navbar{
     max-width: 1240px;
@@ -86,7 +95,7 @@
 .banner{
     max-width: 1240px;
     margin: 10px auto;
-    /* padding: 0 100px; */
+    padding: 0 100px;
     justify-content: space-between;
     border: 2px solid red;
 }
@@ -110,6 +119,105 @@
     width: 100%;
 }
 
+/* Standard Curriculum related style */
+.standard-container{
+    max-width: 1240px;
+    margin: 10px auto;
+    padding: 20px 100px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-image: url('../assets/bg.png');
+    background-repeat: repeat;
+}
+.standard-contend{
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.first-card{
+    background: linear-gradient(to bottom, rgb(222, 245, 255), rgba(255, 255, 255, 0),rgb(255, 255, 255));
+}
+.second-card{
+    background: linear-gradient(to bottom, rgb(255, 244, 220), rgba(255, 255, 255, 0.253),rgb(255, 255, 255));
+}
+.third-card{
+    background: linear-gradient(to bottom, rgb(238, 225, 255), rgba(255, 255, 255, 0.493),rgb(255, 255, 255));
+}
+.card-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(32, 32, 32);
+    margin-bottom: 10px;
+}
+.card-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(128, 128, 128);
+}
+.standard-btn{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.read-blue{
+    color: rgb(100, 200, 255);
+}
+.read-yellow{
+    color: rgb(240, 170, 0);
+}
+.read-purple{
+    color: rgb(135, 0, 255);
+}
+
+.ball-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.ball{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:rgb(254, 163, 1);
+}
+.right-1{
+    font-size: 1.5rem;
+    margin-top: 17px;
+    margin-left: 18px;
+    color: white;
+}
+.right-2{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-left: 18px;
+    rotate: 180deg;
+    color: white;
+}
+
+/*  Our Stories related style */
+.card-container{
+    max-width: 1240px;
+    margin: 10px auto;
+    padding: 20px 100px;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-image: url('../assets/bg.png');
+    background-repeat: repeat;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -120,6 +228,8 @@
         border: 1px solid rgb(254, 163, 1);
     }
     .banner{
+        margin: 0;
+        padding: 0px;
         flex-direction: column-reverse;
     }
     .img-content{
@@ -135,6 +245,15 @@
     .hambarger-content{
         display: block;
         font-size: 1.5rem;
+    }
+    .standard-container{
+        margin: 0;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .ball-container{
+        display: none;
     }
     
 }
