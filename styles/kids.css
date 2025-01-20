@@ -1,5 +1,13 @@
-/* shared style */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* shared style */
 .display-flex{
     display: flex;
 }
@@ -34,8 +42,9 @@
 
 /* navbar related style */
 .navbar{
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 10px auto;
+    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     grid-template-columns: repeat(3, 1fr);
@@ -62,11 +71,22 @@
     font-size: 1.25rem;
     font-weight: 500;
 }
+.nav-title, .second-content, .third-content{
+    display: block;
+}
+.hambarger-content{
+    display: none;
+}
+
+#hidden{
+    display: none;
+}
 
 /* banner related style */
 .banner{
-    max-width: 1440px;
+    max-width: 1240px;
     margin: 10px auto;
+    /* padding: 0 100px; */
     justify-content: space-between;
     border: 2px solid red;
 }
@@ -77,9 +97,44 @@
 }
 .banner-title{
     font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 .banner-description{
     font-weight: 400;
     font-size: 1.25rem;
     color: rgb(17, 17, 17);
+    margin-bottom: 30px;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* responsive for mobile device */
+@media screen and (max-width: 576px) {
+    .navbar{
+        padding: 20px 50px;
+    }
+    #hidden{
+        display: block;
+        border: 1px solid rgb(254, 163, 1);
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .img-content{
+        padding: 20px;
+    }
+    .banner-content{
+        padding: 20px;
+        text-align: center;
+    }
+    .nav-title, .second-content, .third-content{
+        display: none;
+    }
+    .hambarger-content{
+        display: block;
+        font-size: 1.5rem;
+    }
+    
 }
