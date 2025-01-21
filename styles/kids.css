@@ -14,7 +14,7 @@
 .btn-primary{
     font-weight: 600;
     font-size: 1.25rem;
-    padding: 10px 30px;
+    padding: 20px 40px;
     border: none;
     border-radius: 12px;
 }
@@ -120,6 +120,12 @@
 }
 
 /* Standard Curriculum related style */
+.standard-curriculum, .our-stories{
+    max-width: 1440px;
+    margin: 10px auto;
+    background-image: url('../assets/bg.png');
+    background-repeat: repeat;
+}
 .standard-container{
     max-width: 1240px;
     margin: 10px auto;
@@ -128,8 +134,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    background-image: url('../assets/bg.png');
-    background-repeat: repeat;
 }
 .standard-contend{
     border-radius: 18px;
@@ -202,6 +206,10 @@
 }
 
 /*  Our Stories related style */
+.our-stories {
+    background-image: url('../assets/bg.png'), linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.795));
+    background-repeat: repeat;
+}
 .card-container{
     max-width: 1240px;
     margin: 10px auto;
@@ -210,14 +218,66 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    background-image: url('../assets/bg.png');
-    background-repeat: repeat;
+}
+.card-big{
+    border-radius: 16px;
+    background-color: white;
+}
+.card-big-title{
+    text-align: center;
+    margin: 50px;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
 }
 .cards{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.card-text{
+    font-weight: 700;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 50px;
+}
+.card{
+    border-radius: 16px;
+    background-color: white;
+}
+.btn-view-all{
+    display: flex;
+    justify-content: center;
+    padding: 100px 0px;
 }
 
+.btn-time{
+    position: relative;
+    margin-top: -30px;
+    padding-left: 40px;
+}
+.btn-round{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+}
+.btn-1{
+    background: rgb(60, 216, 232);
+}
+.btn-2{
+    background: rgb(149, 178, 38);
+}
+.btn-3{
+    background: rgb(93, 88, 240);
+}
+.btn-4{
+    background: purple;
+}
+.btn-5{
+    background: tomato;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .navbar{
@@ -252,8 +312,31 @@
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    .ball-container{
+    .ball-container, .card-big{
         display: none;
     }
-    
+    .card-container{
+        margin: 1;
+        padding: 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .btn-time{
+        padding-left: 10px;
+        margin-top: -22px;
+    }
+    .btn-round{
+        padding: 10px;
+        border-radius: 50px;
+        border: none;
+    }
+    .card-text{
+        font-weight: 700;
+        font-size: 0.75rem;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .btn-view-all{
+        padding: 40px;
+    }
 }
